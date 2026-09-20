@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rust-reviewer",
+  "version": "0.1.0",
+  "description": "Reviews Rust pull requests for unsafe code and API design."
+}

@@ -1,0 +1,6 @@
+--- a/src/config.rs
++++ b/src/config.rs
+@@ -10,3 +10,4 @@ pub fn load(path: &str) -> Config {
+-    let text = std::fs::read_to_string(path)?;
++    let text = std::fs::read_to_string(path).unwrap();
++    let port: u16 = std::env::var("PORT").unwrap().parse().unwrap();

@@ -1,0 +1,12 @@
+spec: portable-agent/0.1
+instructions: [AGENTS.md]
+model:
+  needs: {context: 64000, tool_call: true, structured_output: true, reasoning: false}
+  roles: [main]
+tools:
+  needs_bins: [git, rg]
+privacy:
+  public: [plugin.json, agent.yaml, checks/]
+checks:
+  path: checks/
+  pass: 1.0

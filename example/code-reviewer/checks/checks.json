@@ -1,0 +1,7 @@
+[
+  {
+    "prompt": "Review this diff.",
+    "files": ["checks/fixtures/unwrap.diff"],
+    "assertions": ["mentions unwrap or panic", "reports at most 5 findings"]
+  }
+]
